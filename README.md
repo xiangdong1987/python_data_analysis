@@ -1,1 +1,5 @@
-# python_data_analysis
+# PYTHON 数据分析学习
+## 目录
+* [贝叶斯算法](https://github.com/xiangdong1987/python_data_analysis/tree/master/algorithm/Bayes "贝叶斯算法")
+* [决策树算法](https://github.com/xiangdong1987/python_data_analysis/tree/master/algorithm/decisionTree "决策树算法")
+* [SVM算法](https://github.com/xiangdong1987/python_data_analysis/tree/master/algorithm/svm "SVM算法")
