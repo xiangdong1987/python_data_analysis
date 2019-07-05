@@ -28,7 +28,7 @@ def get_number(data, name, my_num):
     my_num = ss.transform(my_num)
 
     # 创建 SVM 分类器
-    model_1 = svm.SVC()
+    model_1 = svm.SVR()
     # 用训练集做训练
     model_1.fit(train_X, train_y)
     # 用测试集做预测
@@ -50,7 +50,7 @@ pd.set_option('display.max_columns', None)
 # ID 列没有用，删除该列
 data.drop("lottery_id", axis=1, inplace=True)
 my_num = [
-    [4, 4, 9, 10, 2, 4, 15, 2, 5, 23, 8, 1, 13, 9, 1, 4, 11, 4, 1, 1, 3, 2, 15, 6, 8, 9, 3, 26, 1, 5, 2, 1, 2]]
+    [5, 5, 10, 11, 3, 5, 16, 3, 1, 24, 1, 2, 1, 10, 2, 5, 12, 1, 2, 2, 1, 1, 16, 7, 9, 10, 4, 27, 2, 6, 3, 2, 3]]
 num = []
 for i in range(0, 33):
     num.append(get_number(data, 'r' + str(i + 1), my_num)[0])
