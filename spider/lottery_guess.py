@@ -50,7 +50,7 @@ pd.set_option('display.max_columns', None)
 # ID 列没有用，删除该列
 data.drop("lottery_id", axis=1, inplace=True)
 my_num = [
-    [5, 5, 10, 11, 3, 5, 16, 3, 1, 24, 1, 2, 1, 10, 2, 5, 12, 1, 2, 2, 1, 1, 16, 7, 9, 10, 4, 27, 2, 6, 3, 2, 3]]
+    [3, 3, 8, 9, 1, 3, 14, 1, 4, 22, 7, 2, 4, 8, 4, 3, 10, 3, 5, 21, 2, 1, 14, 5, 7, 8, 2, 25, 2, 4, 1, 6, 1]]
 num = []
 for i in range(0, 33):
     num.append(get_number(data, 'r' + str(i + 1), my_num)[0])

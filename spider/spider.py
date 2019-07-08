@@ -50,7 +50,7 @@ for tr in trs:
         p = './td[' + str(i + 2) + ']//text()'
         createVar['num_' + str(i + 1)] = tr.xpath(p)[0]
         if createVar['num_' + str(i + 1)] == str(i + 1):
-            createVar['num_' + str(i + 1)] = '1'
+            createVar['num_' + str(i + 1)] = '10000'
             result.append(1)
         else:
             result.append(0)
